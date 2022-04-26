@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
         
     }
     //testo aggiunto di prova
+    //ora modifica solo visibile in revisione 2
+
     // Update is called once per frame
     void Update()
     {
