@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private Rigidbody playerRb;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerRb = GetComponent<Rigidbody>();
+        playerRb.AddForce(Vector3.up*1000);
     }
-    //testo aggiunto di prova
+
     //ora modifica solo visibile in revisione 2
 
     // Update is called once per frame
