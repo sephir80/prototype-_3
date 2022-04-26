@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
-        playerRb.AddForce(Vector3.up*1000);
     }
 
     //ora modifica solo visibile in revisione 2
@@ -18,6 +17,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            playerRb.AddForce(Vector3.up * 10, ForceMode.Impulse);
+        }
     }
 }
